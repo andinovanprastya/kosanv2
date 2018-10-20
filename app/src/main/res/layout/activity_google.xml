@@ -1,9 +1,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_layout"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey_100"
+
     android:orientation="vertical"
     android:weightSum="4">
 
@@ -27,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/title_bottom_margin"
             android:text="@string/google_title_text"
-            android:theme="@style/ThemeOverlay.MyTitleText" />
+             />
 
         <TextView
             android:id="@+id/status"
@@ -46,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/grey_300">
+        >
 
         <com.google.android.gms.common.SignInButton
             android:id="@+id/signInButton"
